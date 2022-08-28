@@ -1,0 +1,241 @@
+.container{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background-color: white;
+    margin: 20px;
+    text-decoration-line: none;
+    width: 100%;
+}
+
+.nav, .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.nav {
+    justify-content: center;
+}
+
+
+.all, .favorites {
+    width: 50%;
+    border: 1px solid green;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.all {
+    background-color: green;
+    color: white;
+    margin: 0;
+}
+
+.favorites {
+    background-color: white;
+    color: green;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.search {
+    width: 62%;
+    padding: 10px 10px;
+}
+
+.type {
+    width: 38%;
+    color: gray;
+    margin: 0 10px;
+    padding: 10px 10px;
+}
+
+.types {
+    margin: 0;
+    padding: 0;
+}
+
+.view {
+    display: flex;
+    width: 5%;
+    justify-content: space-around;
+
+}
+
+.view button {
+    margin: 0 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background-color: lightgray;
+    margin: 10px 5px;
+    border: 1px solid gray;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grid {
+    width: 175px;
+}
+
+.grid img {
+    width: 175px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list img {
+    width: 50px;
+}
+
+.list .info {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid .info {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.stats p{
+    margin: 5px;
+}
+
+.heart {
+    color: red;
+    border: none;
+    background: none;
+    padding: 0;
+    width: 20px;
+    margin-right: 20px;
+}
+
+/* Pokemon individual page*/
+
+.pokemon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-big {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid gray;
+    border-top: none;
+}
+
+.big {
+    width: 100%;
+    max-width: 800px;
+    border: 1px solid gray;
+    border-bottom: none;
+}
+
+.info-pokemon {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgray;
+    padding: 10px 0;
+    margin: 0;
+    border-top: none;
+    border-bottom: 1px solid gray;
+}
+
+.stats-pokemon h1, .stats-pokemon p{
+    margin: 0;
+    padding: 0 20px;
+}
+
+.cp-bar, .hp-bar {
+    width: 87%;
+    height: 10px;
+    background-color: orange;
+    margin-top: 15px;
+    margin-bottom: 0;
+    border-radius: 10px;
+}
+
+.bar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -15px;
+}
+
+.bar p{
+    width: 3%;
+    margin: 13px 10px;
+}
+
+.pokemon-health {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: lightgray;
+}
+
+.weight, .height {
+    width: 100%;
+    max-width: 400px;
+    border-top: 1px solid gray;
+    text-align: center;
+}
+
+.weight {
+    border-right: 1px solid gray;
+}
+
+.sound {
+    border: none;
+    background: none;
+    padding: 0;
+    width: 80px;
+    margin: -5% 0 0% -40%;
+}

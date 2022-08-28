@@ -1,0 +1,131 @@
+.nav, .input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+}
+
+.nav {
+    justify-content: center;
+}
+
+.all, .favorites {
+    width: 50%;
+    border: 1px solid green;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+.all {
+    background-color: green;
+    color: white;
+}
+
+.favorites {
+    background-color: white;
+    color: green;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.search {
+    width: 62%;
+    padding: 10px 10px;
+}
+
+.type {
+    width: 38%;
+    color: gray;
+    margin: 0 10px;
+    padding: 10px 10px;
+}
+
+.view {
+    display: flex;
+    width: 5%;
+    justify-content: space-around;
+
+}
+
+.view button {
+    margin: 0 5px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.card {
+    background-color: lightgray;
+    margin: 10px 5px;
+    border: 1px solid gray;
+
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.grid {
+    width: 175px;
+}
+
+.grid img {
+    width: 175px;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.list img {
+    width: 50px;
+}
+
+.list .info {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid .info {
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.stats p{
+    margin: 5px;
+}
+
+.heart {
+    color: red;
+    border: none;
+    background: none;
+    padding: 0;
+    max-width: 20px;
+    margin-right: 20px;
+}
