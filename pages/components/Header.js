@@ -9,7 +9,7 @@ export default function Header (props){
     const listFunction = props.listFunction
     const gridFunction = props.gridFunction
     return (
-        <header>
+        <header className="header">
             <Nav all={props.all} favorites={props.favorites} />
             <div className="input">
                 <input onKeyUp={props.typedSearch} type="search" placeholder="Search" className="search"/>

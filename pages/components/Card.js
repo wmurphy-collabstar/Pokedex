@@ -4,20 +4,24 @@ import Link from "next/Link"
 
 export default function Card(props){
     const [pId, setPId] = React.useState(props.object.id)
+    // const [heartEl, setHeartEl] = React.useState(props.heartEl)
+    console.log(props.heartEl.props.className)
+
+
 
     return (
         <div className={`card ${props.view}`} key={props.object.id}>
             <Link className="link"
                   href={{
                         pathname: "/pokemon-info", 
-                        query:{id: pId, heart: props.object.heart}
+                        query:{id: pId, heartClass: props.heartEl.props.className}
                     }}>
                 <img src={props.object.image}/>
             </Link>    
             <div className="info">
                 <Link className="link" href={{
                                                 pathname: "/pokemon-info", 
-                                                query:{id: pId}
+                                                query:{id: pId, heartClass: props.heartEl.props.className}
                                             }}>
                     <div className="stats">
                         <p><span className="bold">{props.object.name}</span></p>
@@ -25,7 +29,7 @@ export default function Card(props){
                             `${type} `)}</p>
                     </div>
                 </Link>
-                <Heart id={props.object.id} heart={props.heart}/>
+                <Heart id={props.object.id} heartEl = {props.heartEl} handleClick={props.handleClickHeart}/>
             </div>
         </div>
     )

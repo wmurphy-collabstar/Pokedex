@@ -1,26 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
 .pokemon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
     font-size: 14px;
 }
 
 .cardbig {
     max-width: 800px;
-    width: 100%;
+    width: 70%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 1px solid gray;
+    /* border: 1px solid #E36414; */
     border-top: none;
+    border-radius: 5px 5px 5px 5px;
 }
 
 .big {
-    width: 100%;
+    width: 70%;
     max-width: 800px;
-    border: 1px solid gray;
+    max-height: 800px;
+    /* border: 1px solid gray; */
+    /* border: 1px solid #E36414; */
     border-bottom: none;
+    border-radius: 20px;
+    margin-bottom: 5px;
 }
 
 .infopokemon {
@@ -29,11 +36,13 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: lightgray;
+    background-image: linear-gradient(to bottom, #5F0F40, #0F4C5C);
     padding: 10px 0;
     margin: 0;
     border-top: none;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #E36414;
+    color: white;
+    border-radius: 20px 20px 0 0;
 }
 
 .statspokemon h1, .statspokemon p{
@@ -47,7 +56,9 @@
     background-color: orange;
     margin-top: 15px;
     margin-bottom: 0;
+    margin-left: -15px;
     border-radius: 10px;
+    border: 1px solid #E36414;
 }
 
 .hpbar {
@@ -59,7 +70,9 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: -15px;
+    /* margin-left: -15px; */
+    background-color: #0F4C5C;
+    color: white;
 }
 
 .bar p{
@@ -73,24 +86,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightgray;
+    background-color: lightpink;
+    border-radius: 0 0 5px 5px;
 }
 
 .weight, .height {
     width: 100%;
     max-width: 400px;
-    border-top: 1px solid gray;
+    border-top: 1px solid #E36414;
     text-align: center;
+    background-image: linear-gradient(to bottom, #0F4C5C, #5F0F40);
+    color: white;
+    font-size: 16px;
 }
 
 .weight {
-    border-right: 1px solid gray;
+    border-right: 1px solid #E36414;
+    border-radius: 0 0 0 20px;
+}
+
+.height {
+    border-radius: 0 0 20px 0;
 }
 
 .sound {
+    position: relative;
     border: none;
     background: none;
     padding: 0;
     width: 80px;
-    margin: -5% 0 0% -40%;
+    top: 10em;
+    right: 20em;
+    /* margin: -5% 0 0% -40%; */
 }

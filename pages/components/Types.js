@@ -5,9 +5,17 @@ export default function Types (props){
     const [typesList, setTypesList] = React.useState([])
 
     async function getTypes() {
-        let response = await fetch("https://q-exercise-api.o64ixruq9hj.us-south.codeengine.appdomain.cloud/api/rest/pokemon-types/")
-        let data = await response.json()
-        setTypesList(data)
+        try {
+            let response = await fetch("https://q-exercise-api.o64ixruq9hj.us-south.codeengine.appdomain.cloud/api/rest/pokemon-types/")
+            if (response.ok){
+                let data = await response.json()
+                setTypesList(data)
+            } else {
+                throw new Error("Network response was not ok.")
+            }
+        }catch (error) {
+            return error
+        }
     }
 
     getTypes()
