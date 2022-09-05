@@ -4,7 +4,6 @@ import Link from "next/Link"
 
 export default function Card(props){
     const [pId, setPId] = React.useState(props.object.id)
-    // const [heartEl, setHeartEl] = React.useState(props.heartEl)
     console.log(props.heartEl.props.className)
 
 

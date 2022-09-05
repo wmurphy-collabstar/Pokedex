@@ -6,8 +6,6 @@ import Grid from "./Grid"
 
 export default function Header (props){
 
-    const listFunction = props.listFunction
-    const gridFunction = props.gridFunction
     return (
         <header className="header">
             <Nav all={props.all} favorites={props.favorites} />

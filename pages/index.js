@@ -276,27 +276,6 @@ export default function App(){
             }
         }
     })
-
-    // if (allClicked === true){
-    //     setPokemonCards(pokemonList.map (pokemon => (
-    //         <Card key={pokemon.id} object={pokemon} view={cardView}/>
-    //     )))
-
-    // }if (favoritesClicked === true){
-    //     setPokemonCards(pokemonCards.filter (e, i => (
-    //         pokemonList[i].isFavorite === true
-    //     )))
-
-    // }if (searchedValue) {
-    //     setPokemonCards(pokemonCards.filter (e, i => (
-    //         searchValue in pokemonList[i].name
-    //     )))
-
-    // }if (selectedValue !== "Type") {
-    //     setPokemonCards(pokemonCards.filter (e, i => (
-    //         selectedValue in pokemonList[i].types
-    //     )))
-    // }
     
     return (
         <div className={"container"}>
