@@ -1,7 +1,6 @@
 import React from "react"
 
 export default function Heart(props){
-    console.log(props.heartEl)
 
 
     return (

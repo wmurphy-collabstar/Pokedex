@@ -2,8 +2,6 @@ import React from "react"
 import styles from "../../styles/Pokemon.module.css"
 
 export default function Info(props){
-    // console.log(props.heartClass)
-    console.log(props.heartsEl)
 
     return (
         <div className={styles.infopokemon}>
@@ -13,7 +11,7 @@ export default function Info(props){
                             `${type} `)}</p>
             </div>
             <div>
-                {props.heartsEl}
+                {props.heartEl}
             </div>
         </div>
     )

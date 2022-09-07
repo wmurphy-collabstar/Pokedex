@@ -5,8 +5,7 @@ import styles from "../../styles/Pokemon.module.css"
 
 export default function PokemonCard(props){
 
-    const [pInfo, setPInfo] = React.useState(props.heartsEl)
-    console.log(props.heartsEl)
+    const [pInfo, setPInfo] = React.useState([])
 
     const getPokemonI =  async(id) => {
         try {
@@ -28,10 +27,9 @@ export default function PokemonCard(props){
                     <>
                         <Sound Sound={data.sound}/>
                         <img className={styles.big} src={data.image}/>
-                        <BigCard pokemon={data} heartsEl={props.heartsEl}/>
+                        <BigCard pokemon={data} /*heartsEl={props.heartsEl}*//>
                     </>)})
-    }, [props.heartsEl, props.ID])
-    console.log(pInfo)
+    }, [props.ID])
     return (
         <div className={styles.pokemon}>
             {pInfo}
